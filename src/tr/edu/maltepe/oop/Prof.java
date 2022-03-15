@@ -1,7 +1,7 @@
 package tr.edu.maltepe.oop;
 
 public class Prof extends Person {
-    String unvan;
+    private String unvan;
     public Prof(int id, String name, String surname,String unvan) {
         super(id, name, surname);
         this.unvan=unvan;
@@ -13,5 +13,8 @@ public class Prof extends Person {
 
     public void setUnvan(String unvan) {
         this.unvan = unvan;
+    }
+    public String profNeYapıyor(){
+        return getName()+" derste";
     }
 }

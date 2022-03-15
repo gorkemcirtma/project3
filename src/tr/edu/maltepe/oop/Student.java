@@ -1,7 +1,7 @@
 package tr.edu.maltepe.oop;
 
 public class Student extends Person {
-    int yas;
+    private int yas;
 
     public Student(int id, String name, String surname,int yas) {
         super(id, name, surname);
@@ -14,5 +14,8 @@ public class Student extends Person {
 
     public void setYas(int yas) {
         this.yas = yas;
+    }
+    public String ogrenciNeYapıyor(){
+        return getName()+" tenefüste";
     }
 }

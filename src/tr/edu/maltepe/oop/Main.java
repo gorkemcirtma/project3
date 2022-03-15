@@ -31,5 +31,8 @@ public class Main {
         System.out.println(student1.getYas());
         System.out.println(student2.getYas());
         System.out.println(student3.getYas());
+        System.out.println(student3.ogrenciNeYapıyor());
+        System.out.println(prof1.profNeYapıyor());
+
     }
 }
