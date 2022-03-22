@@ -23,6 +23,7 @@ public class Main {
         System.out.println("Library books after set them student and prof");
         library1.landBook(book3,student1);
         library1.landBook(book2,prof1);
+        library1.landBook(book1,prof1);
 
         for(int i =0;i<library1.getBooks().size();i++){
             System.out.println( library1.getBooks().get(i).getName());
