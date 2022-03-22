@@ -1,7 +1,11 @@
 package tr.edu.maltepe.oop;
 
+import java.util.Vector;
+
 public class Student extends Person {
     private int yas;
+
+
 
     public Student(int id, String name, String surname,int yas) {
         super(id, name, surname);
@@ -18,4 +22,6 @@ public class Student extends Person {
     public String ogrenciNeYapıyor(){
         return getName()+" tenefüste";
     }
+
+
 }

@@ -1,5 +1,7 @@
 package tr.edu.maltepe.oop;
 
+import java.util.Vector;
+
 public class Prof extends Person {
     private String unvan;
     public Prof(int id, String name, String surname,String unvan) {
@@ -17,4 +19,5 @@ public class Prof extends Person {
     public String profNeYapıyor(){
         return getName()+" derste";
     }
+
 }
