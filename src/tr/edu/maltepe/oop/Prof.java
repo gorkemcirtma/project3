@@ -20,4 +20,25 @@ public class Prof extends Person {
         return getName()+" derste";
     }
 
+
+
+
+    public void swim(Person person,SportCenter sportCenter) {
+        if(sportCenter.isInSportCenter(person)){
+            System.out.println("Prof "+person.getName()+"is swiming in the pool right now");
+        }
+        else{
+            System.out.println("Prof "+person.getName()+"can not swiming because he is not in sport center");
+        }
+
+    }
+
+    public void playFotball(Person person,SportCenter sportCenter) {
+        if(sportCenter.isInSportCenter(person)){
+            System.out.println("Prof "+person.getName()+" is playing fotball in the stadium right now");
+        }
+        else{
+            System.out.println("Prof "+person.getName()+" can not play fotball because he is not in sport center");
+        }
+    }
 }

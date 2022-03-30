@@ -1,9 +1,8 @@
 package tr.edu.maltepe.oop;
-import java.util.*;
 
 import java.util.Vector;
 
-public class Person {
+public class Person implements DoSport {
     private int id;
     private String name;
     private String surname;
@@ -54,4 +53,10 @@ public class Person {
         getBooks().remove(book);
 
     }
+    @Override
+    public void playFotball(){}
+    @Override
+    public void swim(){}
+
+
 }

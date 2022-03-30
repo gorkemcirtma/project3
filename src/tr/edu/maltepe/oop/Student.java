@@ -1,5 +1,7 @@
 package tr.edu.maltepe.oop;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Vector;
 
 public class Student extends Person {
@@ -23,5 +25,26 @@ public class Student extends Person {
         return getName()+" tenefüste";
     }
 
+
+
+    public void swim(Person person,SportCenter sportCenter) {
+        if(sportCenter.isInSportCenter(person)){
+            System.out.println("Student "+person.getName()+" is swiming in the pool right now");
+        }
+        else{
+            System.out.println("Student "+person.getName()+" can not swiming because he is not in sport center");
+        }
+
+    }
+
+
+    public void playFotball(Person person, @NotNull SportCenter sportCenter) {
+        if(sportCenter.isInSportCenter(person)){
+            System.out.println("Student "+person.getName()+" is playing fotball in the stadium right now");
+        }
+        else{
+            System.out.println("Student "+person.getName()+" can not play fotball because he is not in sport center");
+        }
+    }
 
 }
