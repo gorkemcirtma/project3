@@ -15,7 +15,7 @@ public class SportCenter {
         this.vec.remove(person);
     }
     public boolean isInSportCenter(Person person) {
-        boolean is=false;
+        boolean is=false;//
         for (int i = 0; i < this.vec.size(); i++) {
             if (this.vec.get(i) == person) {
                 is=true;
